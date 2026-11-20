@@ -4,7 +4,6 @@ const toolbar = document.querySelector('.project-toolbar');
 const filterButtons = [...document.querySelectorAll('[data-filter]')];
 const projects = [...document.querySelectorAll('[data-category]')];
 const count = document.getElementById('project-count');
-const secondaryGroup = document.querySelector('.secondary-projects');
 if (toolbar && count && projects.length) {
   toolbar.hidden = false;
   for (const button of filterButtons) {
@@ -17,9 +16,6 @@ if (toolbar && count && projects.length) {
       for (const project of projects) {
         project.hidden = filter !== 'all' && project.dataset.category !== filter;
         if (!project.hidden) visible += 1;
-      }
-      if (secondaryGroup) {
-        secondaryGroup.hidden = ![...secondaryGroup.children].some(project => !project.hidden);
       }
       count.textContent = `${visible} ${visible === 1 ? 'projeto' : 'projetos'}`;
     });
