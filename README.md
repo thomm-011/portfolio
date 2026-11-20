@@ -1,9 +1,21 @@
-# Thomas Silva Cordeiro — Portfólio
+# Thomas Silva Cordeiro — Portfolio
 
-Site público: https://thomm-011.github.io/
+Personal portfolio: https://thomm-011.github.io/
 
-HTML e CSS estáticos, publicados pelo GitHub Pages a partir da raiz de `main`.
+## Structure
 
-O retrato SVG é composto por caracteres ASCII convertidos da foto do autor.
+- `index.html`: page content and project descriptions (Portuguese).
+- `styles.css`: responsive layout and visual design.
+- `main.js`: accessible project filters; all projects remain visible without JavaScript.
+- `ascii-portrait.svg`: ASCII portrait rendered as SVG text.
+- `.nojekyll`: static publishing through GitHub Pages.
 
-Para editar: altere `index.html` e envie para `main`.
+## Preview
+
+Run `python3 -m http.server 8000` in this directory and visit `http://localhost:8000`.
+
+## Publish
+
+Push changes to `main`. GitHub Pages publishes the repository root.
+
+Project illustrations describe the architecture and workflow; they are not screenshots of live environments.
