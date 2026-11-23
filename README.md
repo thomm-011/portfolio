@@ -1,6 +1,6 @@
 # Thomas Silva Cordeiro — Portfolio
 
-Personal portfolio: https://thomm-011.github.io/
+Personal portfolio: https://thomm-011.github.io/portfolio/
 
 ## Structure
 
